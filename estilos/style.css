@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* General */
+body {
+    font-family: "Gothic A1", sans-serif;
+    background-color: #f4f4f4; /* Fondo claro */
+    color: #1C1C1C; /* Texto oscuro */
+}
+
+/* Encabezados */
+h1, h2 {
+    font-family: "Zilla Slab", sans-serif;
+    font-weight: 600;
+
+}
+.image-header {
+    max-height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+/* Breakpoints */
+@media (max-width: 768px) {
+    h1, h2 {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+}

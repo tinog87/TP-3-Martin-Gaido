@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto TP 3</title>
+    <!-- Vinculación al CSS -->
+    <link rel="stylesheet" href="estilos/style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="/img/logo.JPG" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                River Plate
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="btn btn-dark me-2" href="/index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-dark me-2" href="https://www.instagram.com/riverplate/">Instagram</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-dark me-2" href="https://www.youtube.com/@riverplate">Youtube</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <!-- Main Content -->
+<!-- Main Content -->
+<main class="container my-5 flex-grow-1">
+    <!-- Imagen de Encabezado -->
+    <section>
+        <img src="/img/hichada-river.JPG" alt="Encabezado" class="img-fluid w-100">
+    </section>
+
+    <!-- Título y Subtítulo -->
+    <section class="text-center mb-5">
+        <h1 class="fw-bold">De la mano de Gallardo, River volvera a ser campeon.</h1>
+        <p class="text-muted">Con la llegada del "Muñeco", los hinchas del Millonario se ilusionan con volver a dar la vuelta olimpica.</p>
+    </section>
+
+    <!-- Tres textos en fila -->
+    <section class="container text-center my-5">
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <h5 class="fw-bold">Nuevos refuerzos</h5>
+                <p class="text-muted">Nuevos jugadores de mucha jerarquia para aportar a un plantel ya de calidad</p>
+            </div>
+            <div class="col-12 col-md-4">
+                <h5 class="fw-bold">Ilusion del Hincha</h5>
+                <p class="text-muted">Con los hinchas ilusionados, en un Monumental renovado, los partidos van a ser un gran desafio para cualquier equipo visitnte.</p>
+            </div>
+            <div class="col-12 col-md-4">
+                <h5 class="fw-bold">Viejo conocido</h5>
+                <p class="text-muted">Gallardo ya conoce el vestuario, y lo que significa dirigir a este equipo, tiene un objetivo. Ganar</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería de tres imágenes -->
+    <section class="my-5">
+        <h3 class="text-center fw-bold">La ilusion esta intacta</h3>
+        <p class="text-center text-muted">La vuelta de gallardo, nuevos fichajes y la Experiencia. Combinacion perfecta para Ganar</p>
+        <div class="row text-center">
+            <div class="col-12 col-md-4">
+                <img src="/img/gallardo.JPG" alt="Gallardo" class="img-fluid rounded mb-4">
+            </div>
+            <div class="col-12 col-md-4">
+                <img src="/img/pezzella.JPG" alt="refuerzos" class="img-fluid rounded mb-4">
+            </div>
+            <div class="col-12 col-md-4">
+                <img src="/img/river-copa-libertadores-2018.JPG" alt="Experiencia" class="img-fluid rounded mb-4">
+            </div>
+        </div>
+    </section>
+
+    <!-- Botón para Modal -->
+    <section class="text-center">
+        <button class="btn btn-dark btn-sm" data-bs-toggle="modal" data-bs-target="#contactModal">Subscribite y obtene noticias de River</button>
+    </section>
+
+    <!-- Mensaje de confirmación -->
+    <div id="successMessage" class="alert alert-success d-none mt-3" role="alert">
+        ¡Formulario enviado exitosamente!
+    </div>
+</main>
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-3 mt-auto">
+        <p class="text-center mb-0">Mi pagina Web Martin Gaido</p>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Contacto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="contactForm" class="needs-validation" novalidate>
+                        <form id="contactForm" class="needs-validation" novalidate>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="name" required>
+                                <div class="invalid-feedback">Ingresa tu nombre.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" required>
+                                <div class="invalid-feedback">Ingresa formato de mail valido.</div>
+                            </div>
+                            <button type="submit" class="btn btn-success">Enviar</button>
+                        </form>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Script para la validación y manejo del envío -->
+    <script src="/js/code.js"></script>
+</body>
+</html>
